@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyVatTu", "QuanLyVatTu\QuanLyVatTu.csproj", "{BECA8F5E-31DD-4DC5-A708-41B89BC983E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C14312A9-F6B0-422D-97E3-2749B96D7DE5}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BECA8F5E-31DD-4DC5-A708-41B89BC983E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECA8F5E-31DD-4DC5-A708-41B89BC983E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECA8F5E-31DD-4DC5-A708-41B89BC983E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECA8F5E-31DD-4DC5-A708-41B89BC983E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2D8891D-DE73-4B35-B3F6-71ACA28962BD}
+	EndGlobalSection
+EndGlobal
