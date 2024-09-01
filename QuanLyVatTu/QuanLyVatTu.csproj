@@ -141,12 +141,5 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="dscthd.txt" />
-    <Content Include="dshd.txt" />
-    <Content Include="dsnv-dshd.txt" />
-    <Content Include="dsnv.txt" />
-    <Content Include="dsvt.txt" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

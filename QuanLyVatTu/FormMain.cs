@@ -94,7 +94,7 @@ namespace QuanLyVatTu
         public void loadFileDSVT()
         {
             dsvt = new DSVatTu();
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dsvt.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dsvt.txt", FileMode.OpenOrCreate);
             StreamReader sReader = new StreamReader(fs, Encoding.UTF8);
             string str = "";
 
@@ -118,7 +118,7 @@ namespace QuanLyVatTu
         public void loadFileDSNV()
         {
             dsnv = new DSNhanVien(500);
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dsnv.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dsnv.txt", FileMode.OpenOrCreate);
             StreamReader sReader = new StreamReader(fs, Encoding.UTF8);
             string str = "";
 
@@ -142,7 +142,7 @@ namespace QuanLyVatTu
         public void loadFileDSHD()
         {
             dshd = new DSHoaDon(null, null);
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dshd.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dshd.txt", FileMode.OpenOrCreate);
             StreamReader sReader = new StreamReader(fs, Encoding.UTF8);
             string str = "";
 
@@ -163,7 +163,7 @@ namespace QuanLyVatTu
 
         private void loadFileNVKetNoiDSHD()
         {
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dsnv-dshd.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dsnv-dshd.txt", FileMode.OpenOrCreate);
             StreamReader sReader = new StreamReader(fs, Encoding.UTF8);
             string str = "";
 
@@ -199,7 +199,7 @@ namespace QuanLyVatTu
         public void loadFileDSCTHD()
         {
             dscthd = new DSCTHoaDon(null, null);
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dscthd.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dscthd.txt", FileMode.OpenOrCreate);
             StreamReader sReader = new StreamReader(fs, Encoding.UTF8);
             string str = "";
 
@@ -220,7 +220,7 @@ namespace QuanLyVatTu
 
         public void loadFileHDKetNoiDSCTHD()
         {
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dshd-dscthd.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dshd-dscthd.txt", FileMode.OpenOrCreate);
             StreamReader sReader = new StreamReader(fs, Encoding.UTF8);
             string str = "";
             string line;
@@ -531,7 +531,7 @@ namespace QuanLyVatTu
             string str = "";
             str = dsvt.inorderDisplay(dsvt.root, str);
             str_dsvt = str.Split(',');
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dsvt.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dsvt.txt", FileMode.OpenOrCreate);
             fs.SetLength(0);
             StreamWriter sWriter = new StreamWriter(fs, Encoding.UTF8);
             for (int i = 0; i < str_dsvt.Length - 1; i += 4)
@@ -548,7 +548,7 @@ namespace QuanLyVatTu
 
         private void luuDSNV()
         {
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dsnv.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dsnv.txt", FileMode.OpenOrCreate);
             fs.SetLength(0);
             StreamWriter sWriter = new StreamWriter(fs, Encoding.UTF8);
             for (int i = 0; i < dsnv.Amount; i++)
@@ -570,7 +570,7 @@ namespace QuanLyVatTu
         {
             string str = dshd.display();
             str_dshd = str.Split(',');
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dshd.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dshd.txt", FileMode.OpenOrCreate);
             fs.SetLength(0);
             StreamWriter sWriter = new StreamWriter(fs, Encoding.UTF8);
             for (int i = 0; i < str_dshd.Length - 1; i += 3)
@@ -586,7 +586,7 @@ namespace QuanLyVatTu
 
         private void luuDSNVVaHD()
         {
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dsnv-dshd.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dsnv-dshd.txt", FileMode.OpenOrCreate);
             fs.SetLength(0);
             StreamWriter sWriter = new StreamWriter(fs, Encoding.UTF8);
             for (int i = 0; i < dsnv.Amount; i++)
@@ -608,7 +608,7 @@ namespace QuanLyVatTu
 
         private void luuDSCTHD()
         {
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dscthd.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dscthd.txt", FileMode.OpenOrCreate);
             fs.SetLength(0);
             StreamWriter sWriter = new StreamWriter(fs, Encoding.UTF8);
             string str = dscthd.display();
@@ -627,7 +627,7 @@ namespace QuanLyVatTu
 
         private void luuDSHDVaDSCTHD()
         {
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dshd-dscthd.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dshd-dscthd.txt", FileMode.OpenOrCreate);
             fs.SetLength(0);
             StreamWriter sWriter = new StreamWriter(fs, Encoding.UTF8);
             string str = dshd.display();

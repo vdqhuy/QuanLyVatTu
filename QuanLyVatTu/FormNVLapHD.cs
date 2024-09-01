@@ -68,7 +68,7 @@ namespace QuanLyVatTu
 
         private void luuDSNV()
         {
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dsnv.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dsnv.txt", FileMode.OpenOrCreate);
             fs.SetLength(0);
             StreamWriter sWriter = new StreamWriter(fs, Encoding.UTF8);
             for (int i = 0; i < dsnv.Amount; i++)
@@ -85,7 +85,7 @@ namespace QuanLyVatTu
 
         private void luuDSNVVaHD()
         {
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dsnv-dshd.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dsnv-dshd.txt", FileMode.OpenOrCreate);
             fs.SetLength(0);
             StreamWriter sWriter = new StreamWriter(fs, Encoding.UTF8);
             for (int i = 0; i < dsnv.Amount; i++)
@@ -104,7 +104,7 @@ namespace QuanLyVatTu
 
         private void luuDSVT()
         {
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dsvt.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dsvt.txt", FileMode.OpenOrCreate);
             fs.SetLength(0);
             StreamWriter sWriter = new StreamWriter(fs, Encoding.UTF8);
             dsvt = frmMain.Dsvt;
@@ -125,7 +125,7 @@ namespace QuanLyVatTu
 
         private void luuDSCTHD()
         {
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dscthd.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dscthd.txt", FileMode.OpenOrCreate);
             fs.SetLength(0);
             StreamWriter sWriter = new StreamWriter(fs, Encoding.UTF8);
             dscthd = frmMain.Dscthd;
@@ -145,7 +145,7 @@ namespace QuanLyVatTu
 
         private void luuDSHDVaDSCTHD()
         {
-            FileStream fs = new FileStream("C:\\Users\\vdqhu\\Documents\\Study\\PTIT\\Nam 3\\HK2\\CTDL&GT\\QuanLyVatTu\\QuanLyVatTu\\dshd-dscthd.txt", FileMode.OpenOrCreate);
+            FileStream fs = new FileStream("../../data/dshd-dscthd.txt", FileMode.OpenOrCreate);
             fs.SetLength(0);
             StreamWriter sWriter = new StreamWriter(fs, Encoding.UTF8);
             dshd = frmMain.Dshd;
